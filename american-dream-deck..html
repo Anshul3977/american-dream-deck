@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="American Dream Meadowlands — Commercial Sales Deck. Retail leasing, brand sponsorship, and event booking opportunities.">
+<title>American Dream Meadowlands — Commercial Opportunity Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --obsidian: #080808;
+  --charcoal: #111111;
+  --smoke: #1a1a1a;
+  --gold: #C9A84C;
+  --gold-light: #E8C96A;
+  --gold-dim: #8B7235;
+  --platinum: #D4D4D4;
+  --white: #F5F5F0;
+  --accent-red: #C41E3A;
+  --steel: #2A2A2A;
+  --glass: rgba(255,255,255,0.04);
+  --glass-border: rgba(255,255,255,0.08);
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--obsidian);
+  color: var(--white);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  cursor: none;
+}
+@media (hover: none), (pointer: coarse) {
+  body { cursor: auto; }
+  .cursor, .cursor-ring { display: none !important; }
+  a, button, select, input { cursor: pointer; }
+}
+
+/* CUSTOM CURSOR */
+.cursor {
+  position: fixed;
+  width: 8px; height: 8px;
+  background: var(--gold);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
+}
+.cursor-ring {
+  position: fixed;
+  width: 36px; height: 36px;
+  border: 1px solid rgba(201,168,76,0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+}
+body:hover .cursor { opacity: 1; }
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 48px;
+  background: linear-gradient(to bottom, rgba(8,8,8,0.95), transparent);
+  backdrop-filter: blur(0px);
+  transition: backdrop-filter 0.4s, background 0.4s;
+}
+nav.scrolled {
+  background: rgba(8,8,8,0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 22px;
+  letter-spacing: 4px;
+  color: var(--gold);
+  text-decoration: none;
+}
+.nav-logo span { color: var(--white); }
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+.nav-hamburger span {
+  display: block;
+  width: 24px; height: 1px;
+  background: var(--white);
+  transition: all 0.3s ease;
+}
+.nav-hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 60px; left: 0; right: 0;
+  background: rgba(8,8,8,0.98);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+  padding: 24px;
+  z-index: 999;
+  flex-direction: column;
+  gap: 4px;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--platinum);
+  text-decoration: none;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--glass-border);
+  transition: color 0.3s;
+}
+.mobile-menu a:hover, .mobile-menu a:last-child { color: var(--gold); border-bottom: none; }
+@media (max-width: 900px) {
+  .nav-hamburger { display: flex; }
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--platinum);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-cta {
+  background: var(--gold);
+  color: var(--obsidian) !important;
+  padding: 10px 22px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  transition: background 0.3s !important;
+}
+.nav-cta:hover { background: var(--gold-light) !important; color: var(--obsidian) !important; }
+
+/* BUYER GATE */
+#buyer-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  background: var(--obsidian);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+#buyer-gate.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.05);
+}
+.gate-logo {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 52px);
+  letter-spacing: 8px;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.gate-logo span { color: var(--gold); }
+.gate-sub {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+.gate-question {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 2.5vw, 28px);
+  color: var(--platinum);
+  margin-bottom: 40px;
+  text-align: center;
+  font-style: italic;
+}
+.gate-options {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 700px;
+}
+.gate-btn {
+  padding: 18px 28px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: none;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  min-width: 180px;
+  text-align: center;
+}
+.gate-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gold);
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+.gate-btn:hover { color: var(--obsidian); border-color: var(--gold); }
+.gate-btn:hover::before { transform: translateY(0); }
+.gate-btn .icon { font-size: 20px; display: block; margin-bottom: 8px; }
+.gate-divider {
+  width: 60px; height: 1px;
+  background: var(--glass-border);
+  margin: 48px auto;
+}
+.gate-skip {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  cursor: none;
+  text-decoration: none;
+  transition: color 0.3s;
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+}
+.gate-skip:hover { color: var(--gold); }
+
+/* HERO */
+#hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 80px 48px;
+}
+.hero-video-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a0a00 40%, #0a0808 100%);
+  z-index: 0;
+}
+.hero-video-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at 60% 40%, rgba(201,168,76,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 20% 80%, rgba(196,30,58,0.08) 0%, transparent 50%),
+    linear-gradient(to bottom, rgba(8,8,8,0.3) 0%, rgba(8,8,8,0.7) 100%);
+}
+/* Animated grid */
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+  animation: gridShift 20s linear infinite;
+  z-index: 1;
+}
+@keyframes gridShift {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(80px, 80px); }
+}
+.hero-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1800&q=80') center/cover no-repeat;
+  opacity: 0.15;
+  z-index: 1;
+  mix-blend-mode: luminosity;
+}
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.3s forwards;
+}
+.hero-eyebrow::before {
+  content: '';
+  width: 40px; height: 1px;
+  background: var(--gold);
+}
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(52px, 8vw, 110px);
+  line-height: 0.9;
+  color: var(--white);
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.5s forwards;
+}
+.hero-headline .gold { color: var(--gold); }
+.hero-headline .outline {
+  -webkit-text-stroke: 1px var(--gold-dim);
+  color: transparent;
+}
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 19px);
+  line-height: 1.6;
+  color: var(--platinum);
+  max-width: 540px;
+  margin-bottom: 44px;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.7s forwards;
+  font-weight: 300;
+}
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.9s forwards;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  padding: 16px 36px;
+  background: var(--gold);
+  color: var(--obsidian);
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  cursor: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+.btn-ghost {
+  padding: 16px 36px;
+  background: transparent;
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 1px solid rgba(255,255,255,0.2);
+  cursor: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+.hero-stats {
+  position: absolute;
+  right: 48px;
+  bottom: 80px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  opacity: 0;
+  animation: fadeLeft 1s ease 1.1s forwards;
+}
+.hero-stat {
+  text-align: right;
+  border-right: 2px solid var(--gold);
+  padding-right: 20px;
+}
+.hero-stat-num {
+  font-family: var(--font-display);
+  font-size: 36px;
+  color: var(--gold);
+  line-height: 1;
+}
+.hero-stat-label {
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  color: var(--platinum);
+  text-transform: uppercase;
+  display: block;
+  margin-top: 4px;
+}
+.scroll-indicator {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  animation: fadeUp 1s ease 1.5s forwards;
+}
+.scroll-indicator span {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+}
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.2); }
+}
+
+/* SECTIONS */
+section {
+  position: relative;
+  overflow: hidden;
+}
+.section-label {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  max-width: 60px;
+  height: 1px;
+  background: var(--gold-dim);
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 6vw, 80px);
+  line-height: 0.95;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+.section-title .gold { color: var(--gold); }
+.section-body {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--platinum);
+  font-weight: 300;
+  max-width: 580px;
+}
+
+/* WHY THIS PROPERTY */
+#why {
+  padding: 140px 48px;
+  background: var(--charcoal);
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.why-visual {
+  position: relative;
+  height: 520px;
+}
+.why-card-main {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--smoke), var(--steel));
+  border: 1px solid var(--glass-border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+}
+.why-card-main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&q=80') center/cover no-repeat;
+  opacity: 0.2;
+  mix-blend-mode: luminosity;
+}
+.why-card-main::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8,8,8,0.9) 0%, transparent 60%);
+}
+.why-card-text { position: relative; z-index: 2; }
+.why-card-text h3 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.why-card-text p {
+  font-size: 13px;
+  color: var(--platinum);
+  line-height: 1.6;
+}
+.why-float-card {
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  background: var(--gold);
+  color: var(--obsidian);
+  padding: 20px 24px;
+  z-index: 10;
+}
+.why-float-num {
+  font-family: var(--font-display);
+  font-size: 42px;
+  line-height: 1;
+  display: block;
+}
+.why-float-label {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  margin-top: 4px;
+}
+.why-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 40px;
+}
+.metric-card {
+  padding: 24px;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  transition: border-color 0.3s;
+}
+.metric-card:hover { border-color: var(--gold-dim); }
+.metric-num {
+  font-family: var(--font-display);
+  font-size: 38px;
+  color: var(--gold);
+  line-height: 1;
+  display: block;
+}
+.metric-label {
+  font-size: 11px;
+  color: var(--platinum);
+  letter-spacing: 0.5px;
+  display: block;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* COMPETITOR SECTION */
+#compete {
+  padding: 120px 48px;
+  background: var(--obsidian);
+}
+.compete-inner { max-width: 1200px; margin: 0 auto; }
+.compete-table-wrap { overflow-x: auto; margin-top: 60px; }
+.compete-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+.compete-table th {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  border-bottom: 1px solid var(--glass-border);
+  font-weight: 500;
+}
+.compete-table th.highlight { color: var(--gold); }
+.compete-table td {
+  padding: 18px 20px;
+  font-size: 13px;
+  color: var(--platinum);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  vertical-align: middle;
+}
+.compete-table td.highlight {
+  color: var(--gold);
+  font-weight: 600;
+}
+.compete-table tr.active td { background: rgba(201,168,76,0.04); }
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 2px;
+}
+.badge-gold { background: var(--gold); color: var(--obsidian); }
+.badge-dim { background: var(--steel); color: var(--platinum); }
+
+/* RETAIL */
+#retail {
+  padding: 120px 48px;
+  background: var(--charcoal);
+}
+.retail-inner { max-width: 1200px; margin: 0 auto; }
+.retail-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--glass-border);
+  margin: 48px 0 48px;
+  overflow-x: auto;
+}
+.retail-tab {
+  padding: 14px 28px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--platinum);
+  cursor: none;
+  border: none;
+  background: none;
+  font-family: var(--font-body);
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+.retail-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+.retail-tab:hover { color: var(--white); }
+.tab-content { display: none; }
+.tab-content.active { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.tab-visual {
+  height: 380px;
+  background: var(--smoke);
+  position: relative;
+  overflow: hidden;
+}
+.tab-visual img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  mix-blend-mode: luminosity;
+  transition: opacity 0.5s;
+}
+.tab-visual:hover img { opacity: 0.8; }
+.tab-visual-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8,8,8,0.8) 0%, transparent 60%);
+}
+.tab-visual-tag {
+  position: absolute;
+  bottom: 20px; left: 20px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+.tab-info h3 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.tab-info p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--platinum);
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+.tab-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.tab-spec {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--glass-border);
+  font-size: 12px;
+}
+.tab-spec-key { color: var(--gold-dim); letter-spacing: 0.5px; }
+.tab-spec-val { color: var(--white); font-weight: 500; }
+
+/* LUXURY FEATURE */
+#luxury {
+  padding: 0;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.luxury-bg {
+  position: absolute;
+  inset: 0;
+  background: 
+    url('https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=1600&q=80') center/cover no-repeat;
+  opacity: 0.15;
+  mix-blend-mode: luminosity;
+}
+.luxury-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--obsidian) 0%, rgba(8,8,8,0.4) 50%, var(--obsidian) 100%);
+}
+.luxury-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 48px;
+  max-width: 800px;
+}
+.luxury-quote {
+  font-family: var(--font-serif);
+  font-size: clamp(22px, 3vw, 38px);
+  line-height: 1.4;
+  color: var(--white);
+  font-style: italic;
+  margin-bottom: 32px;
+  border-left: 3px solid var(--gold);
+  padding-left: 28px;
+}
+.luxury-brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+.brand-pill {
+  padding: 8px 18px;
+  border: 1px solid var(--glass-border);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--platinum);
+  font-weight: 300;
+}
+
+/* ATTRACTIONS */
+#attractions {
+  padding: 120px 48px;
+  background: var(--smoke);
+}
+.attr-inner { max-width: 1200px; margin: 0 auto; }
+.attr-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 60px;
+}
+.attr-card {
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+  cursor: none;
+  background: var(--steel);
+}
+.attr-card.large { grid-column: span 2; }
+.attr-card img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+  opacity: 0.5;
+  mix-blend-mode: luminosity;
+  filter: saturate(0.3);
+}
+.attr-card:hover img {
+  transform: scale(1.06);
+  opacity: 0.7;
+  filter: saturate(0.6);
+}
+.attr-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8,8,8,0.95) 0%, rgba(8,8,8,0.2) 60%);
+}
+.attr-card-content {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 24px;
+  transform: translateY(8px);
+  transition: transform 0.4s ease;
+}
+.attr-card:hover .attr-card-content { transform: translateY(0); }
+.attr-tag {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 6px;
+}
+.attr-name {
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--white);
+  display: block;
+  margin-bottom: 8px;
+}
+.attr-desc {
+  font-size: 12px;
+  color: var(--platinum);
+  line-height: 1.5;
+  opacity: 0;
+  transition: opacity 0.4s ease 0.1s;
+  max-height: 0;
+  overflow: hidden;
+}
+.attr-card:hover .attr-desc { opacity: 1; max-height: 100px; }
+
+/* EVENTS */
+#events {
+  padding: 120px 48px;
+  background: var(--obsidian);
+}
+.events-inner { max-width: 1200px; margin: 0 auto; }
+.events-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-top: 60px;
+}
+.venue-cards { display: flex; flex-direction: column; gap: 16px; }
+.venue-card {
+  padding: 28px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+  transition: border-color 0.4s, background 0.4s;
+}
+.venue-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--gold);
+  transform: scaleY(0);
+  transition: transform 0.4s ease;
+  transform-origin: bottom;
+}
+.venue-card:hover { border-color: rgba(201,168,76,0.3); background: rgba(201,168,76,0.03); }
+.venue-card:hover::before { transform: scaleY(1); }
+.venue-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.venue-card-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--white);
+}
+.venue-card-cap {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(201,168,76,0.1);
+  padding: 4px 10px;
+}
+.venue-card-desc {
+  font-size: 13px;
+  color: var(--platinum);
+  line-height: 1.65;
+  font-weight: 300;
+}
+.events-visual {
+  position: relative;
+}
+.events-big-stat {
+  padding: 48px;
+  background: var(--gold);
+  color: var(--obsidian);
+  margin-bottom: 16px;
+}
+.events-big-num {
+  font-family: var(--font-display);
+  font-size: 72px;
+  line-height: 1;
+  display: block;
+}
+.events-big-label {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 8px;
+  display: block;
+}
+.events-big-sub {
+  font-size: 13px;
+  margin-top: 12px;
+  opacity: 0.75;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.world-cup-card {
+  padding: 28px;
+  background: linear-gradient(135deg, #8B0000, #C41E3A);
+  position: relative;
+  overflow: hidden;
+}
+.world-cup-card::before {
+  content: '2026';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: 100px;
+  color: rgba(255,255,255,0.08);
+  line-height: 1;
+}
+.wc-tag {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 8px;
+  display: block;
+}
+.wc-title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.wc-desc {
+  font-size: 12px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.6;
+}
+
+/* SPONSORSHIP */
+#sponsorship {
+  padding: 120px 48px;
+  background: var(--charcoal);
+}
+.spon-inner { max-width: 1200px; margin: 0 auto; }
+.spon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 60px;
+}
+.spon-card {
+  padding: 32px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  position: relative;
+  transition: all 0.4s ease;
+  cursor: none;
+}
+.spon-card.featured {
+  background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.02));
+  border-color: var(--gold-dim);
+}
+.spon-card:hover { transform: translateY(-4px); border-color: var(--gold-dim); }
+.spon-tier {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 12px;
+}
+.spon-title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.spon-value {
+  font-size: 28px;
+  color: var(--gold);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 20px;
+  font-family: var(--font-display);
+}
+.spon-features { list-style: none; margin-bottom: 24px; }
+.spon-features li {
+  font-size: 12px;
+  color: var(--platinum);
+  padding: 7px 0;
+  border-bottom: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.spon-features li::before { content: '—'; color: var(--gold); font-size: 10px; }
+
+/* ESTIMATOR */
+#estimator {
+  padding: 120px 48px;
+  background: var(--smoke);
+}
+.est-inner { max-width: 900px; margin: 0 auto; }
+.est-card {
+  background: var(--charcoal);
+  border: 1px solid var(--glass-border);
+  padding: 60px;
+  margin-top: 60px;
+}
+.est-form { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px; }
+.est-field label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 10px;
+}
+.est-field select, .est-field input[type="range"] {
+  width: 100%;
+  background: var(--smoke);
+  border: 1px solid var(--glass-border);
+  color: var(--white);
+  padding: 12px 16px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  cursor: none;
+  appearance: none;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.est-field select:focus { border-color: var(--gold); }
+.range-val {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--platinum);
+  margin-top: 8px;
+}
+.range-current {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--gold);
+  text-align: center;
+  display: block;
+  margin-top: 4px;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 2px;
+  background: var(--glass-border);
+  cursor: none;
+  padding: 0 !important;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px; height: 16px;
+  background: var(--gold);
+  border-radius: 50%;
+  cursor: none;
+}
+.est-result {
+  background: var(--obsidian);
+  padding: 40px;
+  border: 1px solid var(--gold-dim);
+  margin-top: 24px;
+}
+.est-result-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.est-result-item { text-align: center; }
+.est-result-num {
+  font-family: var(--font-display);
+  font-size: 44px;
+  color: var(--gold);
+  display: block;
+  line-height: 1;
+}
+.est-result-label {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--platinum);
+  display: block;
+  margin-top: 8px;
+}
+.est-result p {
+  font-size: 13px;
+  color: var(--platinum);
+  line-height: 1.65;
+  font-style: italic;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 20px;
+  font-family: var(--font-serif);
+}
+
+/* SOCIAL PROOF */
+#proof {
+  padding: 120px 48px;
+  background: var(--obsidian);
+}
+.proof-inner { max-width: 1200px; margin: 0 auto; }
+.proof-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 48px;
+  border: 1px solid var(--glass-border);
+}
+.proof-logo-item {
+  flex: 1;
+  min-width: 140px;
+  padding: 28px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--glass-border);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  font-weight: 700;
+  transition: all 0.3s;
+  cursor: default;
+}
+.proof-logo-item:last-child { border-right: none; }
+.proof-logo-item:hover { color: var(--gold); background: var(--glass); }
+.proof-awards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.award-card {
+  padding: 32px;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+}
+.award-icon { font-size: 28px; margin-bottom: 12px; display: block; }
+.award-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.award-body {
+  font-size: 12px;
+  color: var(--platinum);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* CTA FINAL */
+#cta-section {
+  padding: 160px 48px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.cta-bg {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at center, rgba(201,168,76,0.15) 0%, transparent 70%),
+    var(--charcoal);
+}
+.cta-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.cta-eyebrow {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+.cta-title {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 7vw, 90px);
+  color: var(--white);
+  line-height: 0.9;
+  margin-bottom: 32px;
+}
+.cta-title .gold { color: var(--gold); }
+.cta-body {
+  font-size: 16px;
+  color: var(--platinum);
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 48px;
+}
+.cta-form {
+  display: flex;
+  gap: 0;
+  max-width: 480px;
+  margin: 0 auto 24px;
+}
+.cta-input {
+  flex: 1;
+  padding: 16px 20px;
+  background: var(--smoke);
+  border: 1px solid var(--glass-border);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 14px;
+  border-right: none;
+  outline: none;
+}
+.cta-input::placeholder { color: var(--gold-dim); }
+.cta-submit {
+  padding: 16px 28px;
+  background: var(--gold);
+  color: var(--obsidian);
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  cursor: none;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+.cta-submit:hover { background: var(--gold-light); }
+.cta-note {
+  font-size: 11px;
+  color: var(--gold-dim);
+  letter-spacing: 1px;
+}
+
+/* STICKY CTA */
+.sticky-cta {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 2000;
+  background: var(--gold);
+  color: var(--obsidian);
+  padding: 14px 24px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: none;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 32px rgba(201,168,76,0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  text-decoration: none;
+}
+.sticky-cta.visible { opacity: 1; transform: translateY(0); }
+.sticky-cta:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(201,168,76,0.4); }
+.sticky-dot { width: 6px; height: 6px; background: var(--obsidian); border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+/* FOOTER */
+footer {
+  padding: 60px 48px 40px;
+  background: var(--obsidian);
+  border-top: 1px solid var(--glass-border);
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+.footer-brand { }
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 28px;
+  letter-spacing: 4px;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 12px;
+}
+.footer-logo span { color: var(--white); }
+.footer-desc {
+  font-size: 12px;
+  color: var(--gold-dim);
+  line-height: 1.7;
+}
+.footer-col h4 {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.footer-links { list-style: none; }
+.footer-links li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  font-size: 13px;
+  color: var(--platinum);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-links a:hover { color: var(--gold); }
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  border-top: 1px solid var(--glass-border);
+}
+.footer-copy { font-size: 11px; color: var(--gold-dim); }
+.footer-disclaimer { font-size: 10px; color: rgba(255,255,255,0.2); max-width: 400px; text-align: right; line-height: 1.5; }
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeLeft {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* NUMBER COUNTER */
+.count-up { display: inline-block; }
+
+/* DIVIDER */
+.divider {
+  width: 60px; height: 2px;
+  background: var(--gold);
+  margin: 20px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  nav { padding: 16px 20px; }
+  .nav-links { display: none; }
+  #hero { padding: 60px 24px; }
+  .hero-stats { display: none; }
+  .why-grid, .events-layout { grid-template-columns: 1fr; }
+  .tab-content.active { grid-template-columns: 1fr; }
+  .attr-grid { grid-template-columns: 1fr 1fr; }
+  .attr-card.large { grid-column: span 2; }
+  .spon-grid { grid-template-columns: 1fr; }
+  .proof-awards { grid-template-columns: 1fr 1fr; }
+  .est-form { grid-template-columns: 1fr; }
+  .est-result-grid { grid-template-columns: 1fr 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .footer-disclaimer { text-align: center; }
+  section { padding: 80px 24px !important; }
+  .cta-form { flex-direction: column; }
+  .cta-input { border-right: 1px solid var(--glass-border); border-bottom: none; }
+  .compete-table-wrap { -webkit-overflow-scrolling: touch; }
+  .compete-table { font-size: 11px; }
+  .compete-table th, .compete-table td { padding: 12px 10px; }
+  .est-card { padding: 28px 20px; }
+  .retail-tabs { flex-wrap: wrap; gap: 0; }
+  .retail-tab { padding: 12px 16px; font-size: 10px; }
+  .why-metrics { margin-top: 24px; }
+  .why-visual { height: auto; min-height: 320px; }
+  .why-card-main { min-height: 320px; }
+}
+
+@media (max-width: 600px) {
+  .hero-headline { font-size: clamp(38px, 11vw, 64px); }
+  .section-title { font-size: clamp(30px, 9vw, 52px); }
+  .attr-grid { grid-template-columns: 1fr; }
+  .attr-card.large { grid-column: span 1; }
+  .proof-logos { flex-direction: column; }
+  .proof-logo-item { border-right: none; border-bottom: 1px solid var(--glass-border); }
+  .proof-awards { grid-template-columns: 1fr; }
+  .est-result-grid { grid-template-columns: 1fr; }
+  .spon-grid { grid-template-columns: 1fr; }
+  .events-big-num { font-size: 52px; }
+  .events-big-stat { padding: 28px; }
+  .gate-options { flex-direction: column; align-items: center; }
+  .gate-btn { width: 100%; max-width: 280px; }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .sticky-cta { bottom: 16px; right: 16px; padding: 12px 16px; font-size: 10px; }
+  .nav-logo { font-size: 18px; letter-spacing: 2px; }
+  .luxury-quote { font-size: clamp(16px, 4vw, 22px); }
+  .why-float-card { top: -12px; right: -12px; padding: 14px 16px; }
+  .why-float-num { font-size: 30px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Sticky CTA -->
+<a href="#cta-section" class="sticky-cta" id="stickyCta">
+  <span class="sticky-dot"></span>
+  Book Opportunity Review
+</a>
+
+<!-- BUYER GATE -->
+<div id="buyer-gate">
+  <div class="gate-logo">AMERICAN <span>DREAM</span></div>
+  <div class="gate-sub">Meadowlands · East Rutherford, NJ</div>
+  <div class="gate-question">What brings you here today?</div>
+  <div class="gate-options">
+    <button class="gate-btn" onclick="enterDeck('retail')">
+      <span class="icon">🏪</span>
+      Retail Leasing
+    </button>
+    <button class="gate-btn" onclick="enterDeck('sponsorship')">
+      <span class="icon">📡</span>
+      Brand Sponsorship
+    </button>
+    <button class="gate-btn" onclick="enterDeck('events')">
+      <span class="icon">🎭</span>
+      Event Booking
+    </button>
+    <button class="gate-btn" onclick="enterDeck('explore')">
+      <span class="icon">🔭</span>
+      Full Overview
+    </button>
+  </div>
+  <div class="gate-divider"></div>
+  <button class="gate-skip" onclick="enterDeck('explore')">Skip intro — view full deck</button>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">AMERICAN <span>DREAM</span></a>
+  <ul class="nav-links">
+    <li><a href="#why">Property</a></li>
+    <li><a href="#retail">Retail</a></li>
+    <li><a href="#attractions">Attractions</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#sponsorship">Sponsorship</a></li>
+    <li><a href="#estimator">Estimator</a></li>
+    <li><a href="#cta-section" class="nav-cta">Book a Call</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#why" onclick="closeMenu()">Property</a>
+  <a href="#retail" onclick="closeMenu()">Retail Leasing</a>
+  <a href="#attractions" onclick="closeMenu()">Attractions</a>
+  <a href="#events" onclick="closeMenu()">Events &amp; Venue</a>
+  <a href="#sponsorship" onclick="closeMenu()">Sponsorship</a>
+  <a href="#estimator" onclick="closeMenu()">ROI Estimator</a>
+  <a href="#cta-section" onclick="closeMenu()" style="color:var(--gold);font-weight:700;">Book a Call →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-video-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-image-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">The Commercial Opportunity of the Decade</div>
+    <h1 class="hero-headline">
+      REACH<br>
+      <span class="gold">40 MILLION</span><br>
+      <span class="outline">CONSUMERS</span><br>
+      WHO SHOWED UP.
+    </h1>
+    <p class="hero-sub">
+      America's largest experiential retail destination — 3 million sq ft, 15+ world-record attractions, and the most affluent consumer catchment on earth. Five miles from Manhattan. Billions of dollars in opportunity.
+    </p>
+    <div class="hero-actions">
+      <a href="#why" class="btn-primary">Explore the Property</a>
+      <a href="#cta-section" class="btn-ghost">Schedule a Conversation</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-num">3M</span>
+      <span class="hero-stat-label">Square Feet</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">#1</span>
+      <span class="hero-stat-label">YoY Footfall Growth</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">20.1M</span>
+      <span class="hero-stat-label">Metro Population</span>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- WHY THIS PROPERTY -->
+<section id="why">
+  <div class="why-grid">
+    <div class="why-visual reveal">
+      <div class="why-card-main">
+        <div class="why-float-card">
+          <span class="why-float-num">89%</span>
+          <span class="why-float-label">Leased</span>
+        </div>
+        <div class="why-card-text">
+          <h3>East Rutherford, NJ</h3>
+          <p>5 miles from Midtown Manhattan. Adjacent to MetLife Stadium. At the nexus of I-95, Route 3, and Route 120.</p>
+        </div>
+      </div>
+      <div class="why-metrics reveal reveal-delay-2">
+        <div class="metric-card">
+          <span class="metric-num">$5B</span>
+          <span class="metric-label">Total Capital Investment</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">55%</span>
+          <span class="metric-label">Entertainment — E-Commerce Proof</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">4.5H</span>
+          <span class="metric-label">Average Visitor Dwell Time</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">0%</span>
+          <span class="metric-label">NJ Apparel Sales Tax</span>
+        </div>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="section-label">The Property</div>
+      <h2 class="section-title">NOT A MALL.<br><span class="gold">A MARKET</span><br>FORCE.</h2>
+      <div class="divider"></div>
+      <p class="section-body">
+        American Dream is the second-largest commercial complex in the United States — and the only one where entertainment outweighs retail. This structural distinction makes it resistant to e-commerce attrition. Consumers cannot download a roller coaster or stream an indoor ski slope.
+      </p>
+      <br>
+      <p class="section-body">
+        The New York metro catchment of 20.1 million people includes the highest concentration of ultra-high-net-worth households in the country. New Jersey levies <strong style="color:var(--gold)">zero sales tax on clothing and footwear</strong> — a decisive advantage pulling luxury tourists across the Hudson for high-margin purchases.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPETITIVE COMPARISON -->
+<section id="compete">
+  <div class="compete-inner">
+    <div class="reveal">
+      <div class="section-label">Competitive Analysis</div>
+      <h2 class="section-title">THE <span class="gold">APEX</span><br>OF THE FORMAT.</h2>
+    </div>
+    <div class="compete-table-wrap reveal reveal-delay-2">
+      <table class="compete-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th class="highlight">American Dream (NJ)</th>
+            <th>Mall of America (MN)</th>
+            <th>West Edmonton (AB)</th>
+            <th>Hudson Yards (NY)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="active">
+            <td>Total Square Footage</td>
+            <td class="highlight">3.0M sq ft</td>
+            <td>5.6M sq ft</td>
+            <td>5.3M sq ft</td>
+            <td>1.7M sq ft</td>
+          </tr>
+          <tr class="active">
+            <td>Entertainment Ratio</td>
+            <td class="highlight"><span class="badge badge-gold">55% / 45%</span></td>
+            <td>~30% entertainment</td>
+            <td>~40% entertainment</td>
+            <td>~15% entertainment</td>
+          </tr>
+          <tr class="active">
+            <td>Metro Population Access</td>
+            <td class="highlight"><span class="badge badge-gold">20.1M — NYC</span></td>
+            <td>3.6M — Minneapolis</td>
+            <td>1.5M — Edmonton</td>
+            <td>20.1M — NYC</td>
+          </tr>
+          <tr class="active">
+            <td>Luxury Brand Tier</td>
+            <td class="highlight">Tier 1 — Hermès, Rolex, Saks</td>
+            <td>Tier 2 — Accessible Luxury</td>
+            <td>Tier 2 — Accessible Luxury</td>
+            <td>Tier 1 — Neiman Marcus</td>
+          </tr>
+          <tr class="active">
+            <td>Apparel Tax</td>
+            <td class="highlight"><span class="badge badge-gold">0% NJ Tax</span></td>
+            <td>6.875% MN Tax</td>
+            <td>5% GST</td>
+            <td>8.875% NYC Tax</td>
+          </tr>
+          <tr class="active">
+            <td>World Cup 2026 Impact</td>
+            <td class="highlight"><span class="badge badge-gold">PRIMARY HOST VENUE</span></td>
+            <td><span class="badge badge-dim">None</span></td>
+            <td><span class="badge badge-dim">None</span></td>
+            <td>Indirect benefit</td>
+          </tr>
+          <tr class="active">
+            <td>Sponsorship Potential</td>
+            <td class="highlight">Extremely High — NYC Market</td>
+            <td>High — National</td>
+            <td>Moderate — Regional</td>
+            <td>High — Finance Sector</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- RETAIL LEASING -->
+<section id="retail">
+  <div class="retail-inner">
+    <div class="reveal">
+      <div class="section-label">Retail Leasing</div>
+      <h2 class="section-title">YOUR STORE.<br><span class="gold">THEIR</span><br>DESTINATION.</h2>
+      <p class="section-body">
+        170,000 sq ft of new tenants opened in 2023. The property now sits at 89% leased — and growing. Four distinct leasing environments, each built for a different brand strategy.
+      </p>
+    </div>
+    <div class="retail-tabs reveal reveal-delay-1">
+      <button class="retail-tab active" onclick="switchTab('luxury', this)">The Avenue — Luxury</button>
+      <button class="retail-tab" onclick="switchTab('sport', this)">Sportswear & Athleisure</button>
+      <button class="retail-tab" onclick="switchTab('family', this)">Family & IP Brands</button>
+      <button class="retail-tab" onclick="switchTab('fnb', this)">Food & Beverage</button>
+      <button class="retail-tab" onclick="switchTab('popup', this)">Pop-Up & DTC</button>
+    </div>
+    <div id="tab-luxury" class="tab-content active">
+      <div class="tab-visual">
+        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=800&q=80" loading="lazy" alt="Luxury Retail Corridor" onerror="this.style.display='none'">
+        <div class="tab-visual-overlay"></div>
+        <span class="tab-visual-tag">The Avenue — Courts C &amp; D</span>
+      </div>
+      <div class="tab-info">
+        <h3>ULTRA-LUXURY FLAGSHIPS</h3>
+        <p>The Avenue is a discrete luxury corridor — isolated from entertainment foot traffic. Hermès, Balenciaga, Rolex, Ferrari, and Saks Fifth Avenue are already here. VIP valet, private entrance, champagne service, personal clienteling.</p>
+        <div class="tab-specs">
+          <div class="tab-spec"><span class="tab-spec-key">Suggested Sq Ft</span><span class="tab-spec-val">3,000 – 8,000 sq ft</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Format</span><span class="tab-spec-val">Closed-door boutique, VIP lounge</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Tax Advantage</span><span class="tab-spec-val">0% apparel tax — NJ legislation</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Current Tenants</span><span class="tab-spec-val">Hermès, Balenciaga, Rolex, Ferrari, Saks</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Target Brands</span><span class="tab-spec-val">Chanel, Dior, Van Cleef, Richard Mille</span></div>
+        </div>
+        <a href="#cta-section" class="btn-primary">Inquire About Availability</a>
+      </div>
+    </div>
+    <div id="tab-sport" class="tab-content">
+      <div class="tab-visual">
+        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&q=80" loading="lazy" alt="Indoor Ski Slope" onerror="this.style.display='none'">
+        <div class="tab-visual-overlay"></div>
+        <span class="tab-visual-tag">Active Corridors — Ground Level</span>
+      </div>
+      <div class="tab-info">
+        <h3>PREMIUM SPORT &amp; ATHLEISURE</h3>
+        <p>Big SNOW, Skudin Surf, and DreamWorks Water Park prime visitors psychologically for athletic purchases. Someone exiting three hours of snowboarding is primed to buy premium apparel — right now, adjacent to the slope.</p>
+        <div class="tab-specs">
+          <div class="tab-spec"><span class="tab-spec-key">Suggested Sq Ft</span><span class="tab-spec-val">5,000 – 15,000 sq ft</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Format</span><span class="tab-spec-val">Experiential — interactive fitting</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Location</span><span class="tab-spec-val">MetLife bridge connectors, active zone corridors</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Target Brands</span><span class="tab-spec-val">Lululemon, Arc'teryx, On Running, Patagonia</span></div>
+        </div>
+        <a href="#cta-section" class="btn-primary">Inquire About Availability</a>
+      </div>
+    </div>
+    <div id="tab-family" class="tab-content">
+      <div class="tab-visual">
+        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&q=80" loading="lazy" alt="Family Theme Park" onerror="this.style.display='none'">
+        <div class="tab-visual-overlay"></div>
+        <span class="tab-visual-tag">Adjacent to Nickelodeon Universe</span>
+      </div>
+      <div class="tab-info">
+        <h3>FAMILY &amp; IP-DRIVEN RETAIL</h3>
+        <p>Flagship Toys "R" Us, Nickelodeon Universe, Hasbro Gameroom, and LEGOLAND anchor the family ecosystem. Retail here must function as entertainment — play-and-buy hybrids, character meet-and-greets, exclusive IP drops.</p>
+        <div class="tab-specs">
+          <div class="tab-spec"><span class="tab-spec-key">Suggested Sq Ft</span><span class="tab-spec-val">10,000 – 25,000 sq ft</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Format</span><span class="tab-spec-val">Play-and-buy hybrid, IP activations</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Location</span><span class="tab-spec-val">Adjacent to Nickelodeon Universe, SEA LIFE</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Target Brands</span><span class="tab-spec-val">Build-A-Bear, Nintendo, Disney, Mattel</span></div>
+        </div>
+        <a href="#cta-section" class="btn-primary">Inquire About Availability</a>
+      </div>
+    </div>
+    <div id="tab-fnb" class="tab-content">
+      <div class="tab-visual">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" loading="lazy" alt="Luxury Fine Dining" onerror="this.style.display='none'">
+        <div class="tab-visual-overlay"></div>
+        <span class="tab-visual-tag">70+ F&amp;B Locations</span>
+      </div>
+      <div class="tab-info">
+        <h3>DINING &amp; FOOD HALLS</h3>
+        <p>Food extends dwell time. Families exiting theme parks need immediate, high-quality dining. Michelin-adjacent Szechuan Opera and Carpaccio anchor fine dining; H-Mart drives volume. Eatertainment concepts — dining plus social gaming — convert exceptionally here.</p>
+        <div class="tab-specs">
+          <div class="tab-spec"><span class="tab-spec-key">Restaurant Sq Ft</span><span class="tab-spec-val">4,000 – 12,000 sq ft</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Food Hall Sq Ft</span><span class="tab-spec-val">20,000+ sq ft</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Prime Zones</span><span class="tab-spec-val">Atriums, Dream Wheel surrounds, The Avenue</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Target Formats</span><span class="tab-spec-val">Eatertainment, fine dining, chef concepts</span></div>
+        </div>
+        <a href="#cta-section" class="btn-primary">Inquire About Availability</a>
+      </div>
+    </div>
+    <div id="tab-popup" class="tab-content">
+      <div class="tab-visual">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80" loading="lazy" alt="Retail Brand Activation" onerror="this.style.display='none'">
+        <div class="tab-visual-overlay"></div>
+        <span class="tab-visual-tag">Central Atriums &amp; Grand Staircase</span>
+      </div>
+      <div class="tab-info">
+        <h3>POP-UP &amp; DTC BRANDS</h3>
+        <p>Digitally native brands face skyrocketing online customer acquisition costs. American Dream delivers massive weekend foot traffic for physical validation and product discovery. High-visibility kiosks and short-term leases designed for demonstration and social media reach.</p>
+        <div class="tab-specs">
+          <div class="tab-spec"><span class="tab-spec-key">Suggested Sq Ft</span><span class="tab-spec-val">500 – 2,500 sq ft</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Format</span><span class="tab-spec-val">Kiosk, glass-walled inline, short-term lease</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Location</span><span class="tab-spec-val">Grand Staircase, central atriums, arterial walkways</span></div>
+          <div class="tab-spec"><span class="tab-spec-key">Target Brands</span><span class="tab-spec-val">DTC tech, beauty, wellness, fashion disruptors</span></div>
+        </div>
+        <a href="#cta-section" class="btn-primary">Inquire About Availability</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LUXURY QUOTE -->
+<section id="luxury">
+  <div class="luxury-bg"></div>
+  <div class="luxury-overlay"></div>
+  <div class="luxury-content reveal">
+    <div class="section-label">The Avenue</div>
+    <div class="luxury-quote">
+      "Your brand shares a corridor with Hermès, Balenciaga, and Rolex — not by proximity, but by invitation. Elite brand adjacency is not something you can buy anywhere else."
+    </div>
+    <div class="luxury-brand-list">
+      <span class="brand-pill">Hermès</span>
+      <span class="brand-pill">Balenciaga</span>
+      <span class="brand-pill">Rolex</span>
+      <span class="brand-pill">Ferrari</span>
+      <span class="brand-pill">Saks Fifth Avenue</span>
+      <span class="brand-pill">+ Flagship Opportunity</span>
+    </div>
+  </div>
+</section>
+
+<!-- ATTRACTIONS -->
+<section id="attractions">
+  <div class="attr-inner">
+    <div class="reveal">
+      <div class="section-label">Attractions &amp; Entertainment</div>
+      <h2 class="section-title">THIS IS WHY<br><span class="gold">THEY COME.</span></h2>
+      <p class="section-body">
+        15+ world-record or North American-first attractions. The entertainment portfolio guarantees physical attendance no e-commerce platform can replicate.
+      </p>
+    </div>
+    <div class="attr-grid reveal reveal-delay-2">
+      <div class="attr-card large">
+        <img src="https://images.unsplash.com/photo-1520095972714-909e91b038e5?w=1200&q=80" loading="lazy" alt="Indoor Theme Park Rides">
+        <div class="attr-card-overlay"></div>
+        <div class="attr-card-content">
+          <span class="attr-tag">Indoor Theme Park</span>
+          <span class="attr-name">Nickelodeon Universe</span>
+          <p class="attr-desc">The Western Hemisphere's largest indoor theme park. 8+ acres of rides, character experiences, and record-breaking attractions — including a 93-foot roller coaster.</p>
+        </div>
+      </div>
+      <div class="attr-card">
+        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&q=80" loading="lazy" alt="Indoor Skiing">
+        <div class="attr-card-overlay"></div>
+        <div class="attr-card-content">
+          <span class="attr-tag">Indoor Skiing</span>
+          <span class="attr-name">Big SNOW</span>
+          <p class="attr-desc">The only indoor real-snow ski slope in the United States.</p>
+        </div>
+      </div>
+      <div class="attr-card">
+        <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?w=600&q=80" loading="lazy" alt="Water Park Slides">
+        <div class="attr-card-overlay"></div>
+        <div class="attr-card-content">
+          <span class="attr-tag">Water Park</span>
+          <span class="attr-name">DreamWorks Water Park</span>
+          <p class="attr-desc">North America's largest indoor water park — 40,000 sq ft of slides, pools, and activations.</p>
+        </div>
+      </div>
+      <div class="attr-card">
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" loading="lazy" alt="SEA LIFE Aquarium">
+        <div class="attr-card-overlay"></div>
+        <div class="attr-card-content">
+          <span class="attr-tag">Aquarium</span>
+          <span class="attr-name">SEA LIFE Aquarium</span>
+          <p class="attr-desc">Immersive marine environments drawing families and school groups year-round.</p>
+        </div>
+      </div>
+      <div class="attr-card">
+        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&q=80" loading="lazy" alt="Concert Venue">
+        <div class="attr-card-overlay"></div>
+        <div class="attr-card-content">
+          <span class="attr-tag">Performing Arts</span>
+          <span class="attr-name">Dream Live Venue</span>
+          <p class="attr-desc">3,000-seat state-of-the-art performing arts center with L-Acoustics sound and VIP suites.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Ultimate Display Callout -->
+    <div class="reveal reveal-delay-3" style="margin-top:32px; padding:40px; background:linear-gradient(135deg, rgba(201,168,76,0.08), transparent); border:1px solid var(--gold-dim); display:flex; gap:48px; align-items:center; flex-wrap:wrap;">
+      <div>
+        <span style="font-family:var(--font-display);font-size:64px;color:var(--gold);line-height:1;display:block;">556 FT</span>
+        <span style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--platinum);">The Ultimate Display</span>
+      </div>
+      <div style="flex:1;min-width:280px;">
+        <p style="font-size:14px;color:var(--platinum);line-height:1.7;">A semicircular exterior LED screen wrapping Nickelodeon Universe — nearly two football fields of 10.8 million pixels, visible from the New Jersey Turnpike, Route 3, and Route 120. Sponsors are not buying mall signage. They are buying the entire highway ecosystem of the New York metropolitan area.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <div class="events-inner">
+    <div class="reveal">
+      <div class="section-label">Events &amp; Venue</div>
+      <h2 class="section-title">THE STAGE IS<br><span class="gold">ALREADY</span><br>BUILT.</h2>
+    </div>
+    <div class="events-layout">
+      <div class="venue-cards reveal reveal-delay-1">
+        <div class="venue-card">
+          <div class="venue-card-top">
+            <span class="venue-card-name">Dream Live PAC</span>
+            <span class="venue-card-cap">3,000 Seats</span>
+          </div>
+          <p class="venue-card-desc">30,000 sq ft performing arts center. L-Acoustics sound system, multi-level VIP seating, Aramark catering, Ticketmaster ticketing. Product launches, concerts, corporate keynotes.</p>
+        </div>
+        <div class="venue-card">
+          <div class="venue-card-top">
+            <span class="venue-card-name">The Backyard</span>
+            <span class="venue-card-cap">10,000 Capacity</span>
+          </div>
+          <p class="venue-card-desc">103,763 sq ft outdoor event space. 5K runs, corporate BBQs, outdoor brand activations, festivals. Buyouts from $15,000. Adjacent parking for 33,000 vehicles.</p>
+        </div>
+        <div class="venue-card">
+          <div class="venue-card-top">
+            <span class="venue-card-name">Theme Park Buyouts</span>
+            <span class="venue-card-cap">Private Access</span>
+          </div>
+          <p class="venue-card-desc">After-hours private access to Nickelodeon Universe or DreamWorks Water Park. Corporate gifting, client entertainment, VIP company retreats. Nothing else compares.</p>
+        </div>
+        <div class="venue-card">
+          <div class="venue-card-top">
+            <span class="venue-card-name">LED Network</span>
+            <span class="venue-card-cap">40,000 sq ft</span>
+          </div>
+          <p class="venue-card-desc">138+ synchronized interior displays plus the 556-ft exterior Ultimate Display. Total brand takeover capability. Synchronized globally during product launches.</p>
+        </div>
+      </div>
+      <div class="events-visual reveal reveal-delay-2">
+        <div class="events-big-stat">
+          <span class="events-big-num">146.5%</span>
+          <span class="events-big-label">Footfall Surge — JonasCon</span>
+          <p class="events-big-sub">A single IP event drove 146.5% more visits than the year-to-date average — proving the venue's capacity to manufacture massive, targeted traffic spikes on demand.</p>
+        </div>
+        <div class="world-cup-card">
+          <span class="wc-tag">⚽ FIFA World Cup 2026 — The Catalyst</span>
+          <div class="wc-title">2 MILLION VISITORS.<br>39 DAYS. ONE PROPERTY.</div>
+          <p class="wc-desc">MetLife Stadium hosts 8 World Cup matches including the Final. American Dream is the designated parking and hospitality hub. Dream Fan Fest projects 2 million international visitors over 39 days. The window to establish a presence before the event is closing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPONSORSHIP -->
+<section id="sponsorship">
+  <div class="spon-inner">
+    <div class="reveal">
+      <div class="section-label">Brand Partnerships &amp; Sponsorship</div>
+      <h2 class="section-title">OWN THE<br><span class="gold">ATTENTION.</span></h2>
+      <p class="section-body">
+        40,000 sq ft of interconnected LED networks. 556 feet of highway-visible exterior display. Sponsorship packages priced to reflect the true commercial value of the NYC metro ecosystem.
+      </p>
+    </div>
+    <div class="spon-grid reveal reveal-delay-2">
+      <div class="spon-card">
+        <span class="spon-tier">Signature Tier</span>
+        <div class="spon-title">Digital Network Takeover</div>
+        <span class="spon-value">$1.5M – $3.5M</span>
+        <ul class="spon-features">
+          <li>138+ synchronized interior displays</li>
+          <li>Full exterior Ultimate Display access</li>
+          <li>Highway-level impressions via NJ Turnpike</li>
+          <li>Ticketing and app brand integration</li>
+          <li>12-month exclusivity window</li>
+        </ul>
+        <a href="#cta-section" class="btn-ghost">Initiate Partnership</a>
+      </div>
+      <div class="spon-card featured">
+        <span class="spon-tier">Premier Tier — Most Strategic</span>
+        <div class="spon-title">Theme Park Naming Rights</div>
+        <span class="spon-value">$3M – $7M</span>
+        <ul class="spon-features">
+          <li>Full ecosystem dominance — every touchpoint</li>
+          <li>Naming rights on ticketing, maps, app interfaces</li>
+          <li>Physical entrance branding</li>
+          <li>Embedded in regional GPS navigation</li>
+          <li>Multi-year generational brand memory</li>
+          <li>World Cup 2026 halo visibility</li>
+        </ul>
+        <a href="#cta-section" class="btn-primary">Secure This Package</a>
+      </div>
+      <div class="spon-card">
+        <span class="spon-tier">Event Tier</span>
+        <div class="spon-title">World Cup Fan Fest 2026</div>
+        <span class="spon-value">$1M – $2.5M</span>
+        <ul class="spon-features">
+          <li>39-day exclusive Dream Fan Fest association</li>
+          <li>2M projected international visitors</li>
+          <li>FIFA adjacency without FIFA fee</li>
+          <li>International media coverage inclusion</li>
+          <li>Sampling, activation, and hospitality rights</li>
+        </ul>
+        <a href="#cta-section" class="btn-ghost">Claim the 2026 Window</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ESTIMATOR / TOOL -->
+<section id="estimator">
+  <div class="est-inner">
+    <div class="reveal">
+      <div class="section-label">Interactive Estimator</div>
+      <h2 class="section-title">MODEL YOUR<br><span class="gold">OPPORTUNITY.</span></h2>
+      <p class="section-body">
+        Estimate your reach, impressions, and potential ROI based on your investment type and scale. Based on public industry benchmarks and modeled estimates.
+      </p>
+    </div>
+    <div class="est-card reveal reveal-delay-1">
+      <div class="est-form">
+        <div class="est-field">
+          <label>Investment Type</label>
+          <select id="est-type" onchange="calcEstimate()">
+            <option value="retail">Retail Lease</option>
+            <option value="sponsor">Brand Sponsorship</option>
+            <option value="event">Event Booking</option>
+          </select>
+        </div>
+        <div class="est-field">
+          <label>Annual Budget</label>
+          <select id="est-budget" onchange="calcEstimate()">
+            <option value="500">$500K</option>
+            <option value="1000">$1M</option>
+            <option value="2500">$2.5M</option>
+            <option value="5000">$5M+</option>
+          </select>
+        </div>
+        <div class="est-field">
+          <label>Campaign Duration</label>
+          <select id="est-duration" onchange="calcEstimate()">
+            <option value="1">1 Month</option>
+            <option value="3">1 Quarter</option>
+            <option value="6">6 Months</option>
+            <option value="12">Full Year</option>
+          </select>
+        </div>
+        <div class="est-field">
+          <label>Target Audience</label>
+          <select id="est-audience" onchange="calcEstimate()">
+            <option value="luxury">Ultra-Luxury / UHNWI</option>
+            <option value="family">Affluent Families</option>
+            <option value="corporate">Corporate / B2B</option>
+            <option value="tourist">International Tourist</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-primary" onclick="calcEstimate(); document.getElementById('est-result').style.display='block';">Generate Opportunity Model</button>
+      <div id="est-result" class="est-result" style="display:none;">
+        <div class="est-result-grid">
+          <div class="est-result-item">
+            <span class="est-result-num" id="res-impressions">—</span>
+            <span class="est-result-label">Physical Impressions</span>
+          </div>
+          <div class="est-result-item">
+            <span class="est-result-num" id="res-reach">—</span>
+            <span class="est-result-label">Estimated Monthly Reach</span>
+          </div>
+          <div class="est-result-item">
+            <span class="est-result-num" id="res-cpm">—</span>
+            <span class="est-result-label">Est. Effective CPM</span>
+          </div>
+        </div>
+        <p id="res-summary">Based on your selections, this model reflects estimated reach at American Dream Meadowlands using public industry benchmarks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section id="proof">
+  <div class="proof-inner">
+    <div class="reveal">
+      <div class="section-label">Validation &amp; Recognition</div>
+      <h2 class="section-title">THE WORLD<br><span class="gold">ALREADY</span><br>AGREES.</h2>
+    </div>
+    <div class="proof-logos reveal reveal-delay-1">
+      <div class="proof-logo-item">HERMÈS</div>
+      <div class="proof-logo-item">BALENCIAGA</div>
+      <div class="proof-logo-item">ROLEX</div>
+      <div class="proof-logo-item">FERRARI</div>
+      <div class="proof-logo-item">DREAMWORKS</div>
+      <div class="proof-logo-item">NICKELODEON</div>
+      <div class="proof-logo-item">HASBRO</div>
+    </div>
+    <div class="proof-awards reveal reveal-delay-2">
+      <div class="award-card">
+        <span class="award-icon">🏆</span>
+        <div class="award-title">MAPIC Cannes Award</div>
+        <p class="award-body">Best Futura Shopping Center — globally recognized at the premier retail real estate conference in Cannes, France.</p>
+      </div>
+      <div class="award-card">
+        <span class="award-icon">📊</span>
+        <div class="award-title">Placer.ai #1 Ranking</div>
+        <p class="award-body">Ranked highest year-over-year footfall growth among all U.S. retail destinations in 2023 — out of every mall, outlet, and retail center in the country.</p>
+      </div>
+      <div class="award-card">
+        <span class="award-icon">🌍</span>
+        <div class="award-title">RLI Awards London</div>
+        <p class="award-body">Recognized as a premier global tourism destination at the Retail & Leisure International Awards in London.</p>
+      </div>
+      <div class="award-card">
+        <span class="award-icon">📈</span>
+        <div class="award-title">JonasCon: 146.5% Surge</div>
+        <p class="award-body">A single event proved the venue's capacity to manufacture precise, massive traffic spikes — 146.5% above YTD average.</p>
+      </div>
+      <div class="award-card">
+        <span class="award-icon">🏗️</span>
+        <div class="award-title">$5B Investment. Stabilized.</div>
+        <p class="award-body">Construction debt extended and stabilized via JPMorgan Chase-led facility. Asset is fully operational, leasing momentum accelerating.</p>
+      </div>
+      <div class="award-card">
+        <span class="award-icon">⚽</span>
+        <div class="award-title">FIFA World Cup 2026 Designation</div>
+        <p class="award-body">Officially designated as the primary parking and hospitality hub for MetLife Stadium World Cup matches — including the Final.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="cta-section">
+  <div class="cta-bg"></div>
+  <div class="cta-inner reveal">
+    <div class="cta-eyebrow">The Window Is Closing</div>
+    <h2 class="cta-title">CLAIM YOUR<br><span class="gold">POSITION.</span></h2>
+    <p class="cta-body">
+      The 2026 FIFA World Cup Final is at MetLife Stadium. American Dream is the designated hub. Two million international visitors arrive. The question is whether your brand is positioned when they do.
+    </p>
+    <div class="cta-form">
+      <input type="email" class="cta-input" placeholder="Your business email" id="ctaEmail">
+      <button class="cta-submit" onclick="handleCTASubmit()">Book 15-Min Call</button>
+    </div>
+    <div class="cta-note" id="cta-msg">No commitment. Executive conversation only.</div>
+    <div style="margin-top:48px; padding-top:40px; border-top:1px solid var(--glass-border);">
+      <p style="font-size:11px;color:var(--gold-dim);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Three ways to start</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="#retail" class="btn-ghost" style="font-size:11px;">Retail Leasing →</a>
+        <a href="#sponsorship" class="btn-ghost" style="font-size:11px;">Brand Partnership →</a>
+        <a href="#events" class="btn-ghost" style="font-size:11px;">Event Booking →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">AMERICAN <span>DREAM</span></span>
+      <p class="footer-desc">One Meadowlands Plaza<br>East Rutherford, NJ 07073<br><br>The commercial opportunity of the decade. Now leasing, now activating.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Opportunities</h4>
+      <ul class="footer-links">
+        <li><a href="#retail">Retail Leasing</a></li>
+        <li><a href="#retail">Luxury — The Avenue</a></li>
+        <li><a href="#retail">Pop-Up &amp; DTC</a></li>
+        <li><a href="#retail">Food &amp; Beverage</a></li>
+        <li><a href="#sponsorship">Brand Sponsorship</a></li>
+        <li><a href="#events">Event Booking</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Property</h4>
+      <ul class="footer-links">
+        <li><a href="#why">Why American Dream</a></li>
+        <li><a href="#compete">Competitive Analysis</a></li>
+        <li><a href="#attractions">Attractions</a></li>
+        <li><a href="#proof">Awards &amp; Validation</a></li>
+        <li><a href="#estimator">ROI Estimator</a></li>
+        <li><a href="#cta-section">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 American Dream Meadowlands — Deck by Anshul Palarpwar</span>
+    <span class="footer-disclaimer">Built by <strong style="color:var(--gold-dim)">Anshul Palarpwar</strong> · <a href="https://github.com/Anshul3977" style="color:var(--gold-dim);text-decoration:none;" target="_blank">github.com/Anshul3977</a> · Data from public sources &amp; industry benchmarks.</span>
+  </div>
+</footer>
+
+<script>
+// CURSOR
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mouseX = 0, mouseY = 0;
+let ringX = 0, ringY = 0;
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX; mouseY = e.clientY;
+  cursor.style.left = mouseX + 'px';
+  cursor.style.top = mouseY + 'px';
+});
+function animateRing() {
+  ringX += (mouseX - ringX) * 0.12;
+  ringY += (mouseY - ringY) * 0.12;
+  ring.style.left = ringX + 'px';
+  ring.style.top = ringY + 'px';
+  requestAnimationFrame(animateRing);
+}
+animateRing();
+
+document.querySelectorAll('a, button, .gate-btn, .attr-card, .venue-card, .spon-card, select').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.style.width = '16px'; cursor.style.height = '16px';
+    ring.style.width = '56px'; ring.style.height = '56px';
+    ring.style.opacity = '0.6';
+  });
+  el.addEventListener('mouseleave', () => {
+    cursor.style.width = '8px'; cursor.style.height = '8px';
+    ring.style.width = '36px'; ring.style.height = '36px';
+    ring.style.opacity = '1';
+  });
+});
+
+// BUYER GATE
+function enterDeck(persona) {
+  const gate = document.getElementById('buyer-gate');
+  gate.classList.add('hidden');
+  setTimeout(() => { gate.style.display = 'none'; }, 800);
+  
+  // Scroll to relevant section
+  const targets = { retail: '#retail', sponsorship: '#sponsorship', events: '#events', explore: '#hero' };
+  if (persona !== 'explore') {
+    setTimeout(() => {
+      const el = document.querySelector(targets[persona]);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 900);
+  }
+}
+
+// NAV SCROLL
+const navbar = document.getElementById('navbar');
+const stickyCta = document.getElementById('stickyCta');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 80) { navbar.classList.add('scrolled'); }
+  else { navbar.classList.remove('scrolled'); }
+  if (window.scrollY > 400) { stickyCta.classList.add('visible'); }
+  else { stickyCta.classList.remove('visible'); }
+});
+
+// SCROLL REVEAL
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+reveals.forEach(r => observer.observe(r));
+
+// TABS
+function switchTab(id, btn) {
+  document.querySelectorAll('.retail-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  const tabEl = document.querySelector('#tab-' + id);
+  if (tabEl) tabEl.classList.add('active');
+  if (btn) btn.classList.add('active');
+}
+
+// ESTIMATOR
+function calcEstimate() {
+  const type = document.getElementById('est-type').value;
+  const budget = parseInt(document.getElementById('est-budget').value);
+  const duration = parseInt(document.getElementById('est-duration').value);
+  const audience = document.getElementById('est-audience').value;
+  
+  let baseImpressions, reachMultiplier, cpm;
+  
+  if (type === 'retail') {
+    baseImpressions = budget * 180;
+    reachMultiplier = duration * 2.2;
+    cpm = (budget * 1000) / baseImpressions;
+  } else if (type === 'sponsor') {
+    baseImpressions = budget * 320;
+    reachMultiplier = duration * 3.8;
+    cpm = (budget * 1000) / baseImpressions;
+  } else {
+    baseImpressions = budget * 240;
+    reachMultiplier = duration * 1.5;
+    cpm = (budget * 1000) / baseImpressions;
+  }
+  
+  const audienceMult = { luxury: 0.4, family: 1.2, corporate: 0.6, tourist: 0.9 }[audience];
+  const totalImpressions = Math.round(baseImpressions * audienceMult * duration / 10) * 10;
+  const monthlyReach = Math.round((totalImpressions * 0.6) / duration / 1000) + 'K';
+  const effectiveCPM = '$' + (cpm * audienceMult).toFixed(2);
+  
+  document.getElementById('res-impressions').textContent = totalImpressions.toLocaleString();
+  document.getElementById('res-reach').textContent = monthlyReach;
+  document.getElementById('res-cpm').textContent = effectiveCPM;
+  
+  const summaries = {
+    retail: 'Physical retail at American Dream captures consumers with a 4+ hour dwell time — far exceeding the 90-minute average for traditional malls. Your brand benefits from entertainment-driven foot traffic that converts.',
+    sponsor: 'Sponsorship at American Dream delivers Times Square-level visual density with none of the competitive clutter. The 556-ft highway display alone reaches millions of commuters annually.',
+    event: 'American Dream\'s venue infrastructure enables events that blend corporate agenda with world-class entertainment — a combination that drives higher attendance, longer engagement, and stronger brand recall.',
+  };
+  document.getElementById('res-summary').textContent = summaries[type] + ' (Illustrative model based on public benchmarks.)';
+}
+calcEstimate();
+
+// CTA FORM
+function handleCTASubmit() {
+  const email = document.getElementById('ctaEmail').value;
+  if (email && email.includes('@')) {
+    document.getElementById('cta-msg').textContent = '✓ Received. A member of the commercial team will be in touch within 24 hours.';
+    document.getElementById('cta-msg').style.color = 'var(--gold)';
+    document.getElementById('ctaEmail').value = '';
+  } else {
+    document.getElementById('cta-msg').textContent = 'Please enter a valid business email.';
+    document.getElementById('cta-msg').style.color = '#C41E3A';
+  }
+}
+
+// KEYBOARD SHORTCUTS
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') { enterDeck('explore'); closeMenu(); }
+});
+
+// GLOBAL IMAGE FALLBACK
+document.querySelectorAll('img').forEach(img => {
+  img.addEventListener('error', function() {
+    this.style.opacity = '0';
+    this.parentElement.style.background = 'linear-gradient(135deg, #1a1a1a, #2a2a2a)';
+  });
+});
+
+// MOBILE MENU
+function toggleMenu() {
+  const btn = document.getElementById('hamburger');
+  const menu = document.getElementById('mobileMenu');
+  btn.classList.toggle('open');
+  menu.classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('hamburger').classList.remove('open');
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+</script>
+</body>
+</html>
