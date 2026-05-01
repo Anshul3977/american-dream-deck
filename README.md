@@ -2,7 +2,7 @@
 
 > A fully interactive, browser-based sales deck built to replace static PDFs and fragmented pitches for one of the world's largest mixed-use destinations.
 
-**Live URL:** `statuesque-meringue-c22ac7.netlify.app`  
+**Live URL:** `(https://sunny-pastelito-2dde17.netlify.app/)`  
 **Built for:** LIAT.AI Senior Frontend Engineer Assignment
 
 ---
